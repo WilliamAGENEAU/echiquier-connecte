@@ -21,6 +21,7 @@ Ce projet est un échiquier connecté qui permet de jouer aux échecs contre un 
 
 ```bash
 git clone https://github.com/votre_utilisateur/echiquier-connecte.git
+```
 
 ## Contributeurs
 - ""
