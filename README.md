@@ -1,27 +1,21 @@
-# Echiquier Connecté
+# Flutter chess game
 
-Ce projet est un échiquier connecté qui permet de jouer aux échecs contre un adversaire distant. L'échiquier est équipé de capteurs pour détecter les mouvements des pièces.
+Flutter chess game fully written on dart. In dependencies only [flutter_bloc](https://pub.dev/packages/flutter_bloc) library.
 
-## Fonctionnalités
+![chess](https://user-images.githubusercontent.com/19287188/172387937-5b248aad-498c-4f8a-a1af-05abdc04499a.gif)
 
-- Détection des mouvements des pièces d'échecs
-- IA adversaire
-- Affichage en temps réel du plateau de jeu
+## Features
 
-## Matériel nécessaire
+I work with this repo only when I've a free time. But I don't have enough )))
 
-- ARDUINO (ou autre microcontrôleur compatible)
-- Capteurs de magnétiques pour chaque case de l'échiquier
-- Pièces d'échecs équipées d'aimants
-- Accès à Internet pour la communication distante
+My main Idea is:
 
-## Installation
-
-1. Cloner ce dépôt :
-
-```bash
-git clone https://github.com/votre_utilisateur/echiquier-connecte.git
-```
-
-## Contributeurs
-- ""
+- Separate logic and presentation ✅
+  - Models: contains logic
+  - UI: contains all ui widgets
+  - bloc: use for binder between model and ui  
+- Create logic that calculates available way for figure ✅
+- Add "winning" logic | <b>in progress</b> 👨‍💻|
+  - Сheckmate logic
+- Players take turns moving figures ✅
+- Add AI for playing with player | <b>in hoping</b> 🤖|
