@@ -1,21 +1,17 @@
-# Flutter chess game
+# App Echiquier Connecté
 
-Flutter chess game fully written on dart. In dependencies only [flutter_bloc](https://pub.dev/packages/flutter_bloc) library.
+Une application Flutter pour jouer aux échecs avec une IA.
 
-![chess](https://user-images.githubusercontent.com/19287188/172387937-5b248aad-498c-4f8a-a1af-05abdc04499a.gif)
+## Description
 
-## Features
+App Echiquier Connecté est une application Flutter qui vous permet de jouer aux échecs contre une intelligence artificielle. L'application offre plusieurs niveaux de difficulté pour l'IA, vous permettant de choisir celui qui correspond le mieux à votre niveau de compétence.
 
-I work with this repo only when I've a free time. But I don't have enough )))
+## Fonctionnalités
 
-My main Idea is:
+- Interface utilisateur conviviale pour jouer aux échecs.
+- Différents niveaux de difficulté pour l'IA (Facile, Moyen, Difficile).
+- Affichage des pièces capturées par chaque joueur.
+- Possibilité de sélectionner et déplacer les pièces en utilisant l'interface tactile.
 
-- Separate logic and presentation ✅
-  - Models: contains logic
-  - UI: contains all ui widgets
-  - bloc: use for binder between model and ui  
-- Create logic that calculates available way for figure ✅
-- Add "winning" logic | <b>in progress</b> 👨‍💻|
-  - Сheckmate logic
-- Players take turns moving figures ✅
-- Add AI for playing with player | <b>in hoping</b> 🤖|
+## Captures d'écran
+
