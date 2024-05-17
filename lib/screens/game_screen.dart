@@ -37,6 +37,7 @@ class GameScreen extends StatelessWidget {
             ),
             ListTile(
               title: const Text('Facile'),
+              leading: const Icon(Icons.sentiment_very_satisfied),
               onTap: () {
                 // GetIt.I<GameCubit>().setAILevel(AILevel.easy);
                 Navigator.pop(context);
@@ -45,6 +46,7 @@ class GameScreen extends StatelessWidget {
             ),
             ListTile(
               title: const Text('Moyen'),
+              leading: const Icon(Icons.sentiment_neutral),
               onTap: () {
                 // GetIt.I<GameCubit>().setAILevel(AILevel.medium);
                 Navigator.pop(context);
@@ -53,6 +55,7 @@ class GameScreen extends StatelessWidget {
             ),
             ListTile(
               title: const Text('Difficile'),
+              leading: const Icon(Icons.sentiment_very_dissatisfied),
               onTap: () {
                 // GetIt.I<GameCubit>().setAILevel(AILevel.hard);
                 Navigator.pop(context);
@@ -65,19 +68,58 @@ class GameScreen extends StatelessWidget {
       body: BlocBuilder<GameCubit, GameState>(
         bloc: GetIt.I<GameCubit>(),
         builder: (context, state) {
-          return Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              LostFiguresWidget(figures: state.board.blackLost.figures),
-              BoardWidget(
-                availablePositionsHash: state.availablePositionsHash,
-                board: state.board,
-                selectedCell: state.selectedCell,
-              ),
-              LostFiguresWidget(figures: state.board.whiteLost.figures),
-            ],
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 60),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                LostFiguresWidget(figures: state.board.blackLost.figures),
+                BoardWidget(
+                  availablePositionsHash: state.availablePositionsHash,
+                  board: state.board,
+                  selectedCell: state.selectedCell,
+                ),
+                LostFiguresWidget(figures: state.board.whiteLost.figures),
+              ],
+            ),
           );
         },
+      ),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            onPressed: () {
+              // Action pour la prise de pion
+              print('Prise de Pion');
+            },
+            backgroundColor: const Color(
+                0xFFB2D3BE), // Couleur dérivée de la couleur primaire
+            tooltip: 'Prise de Pion',
+            child: const Icon(Icons.ads_click),
+          ),
+          const SizedBox(height: 10),
+          FloatingActionButton(
+            onPressed: () {
+              // Action pour la promotion
+              print('Promotion');
+            },
+            backgroundColor: const Color(
+                0xFF8BAE8E), // Couleur dérivée de la couleur primaire
+            tooltip: 'Promotion',
+            child: const Icon(Icons.arrow_upward),
+          ),
+          const SizedBox(height: 10),
+          FloatingActionButton(
+            onPressed: () {
+              // Action pour le roque
+              print('Roque');
+            },
+            backgroundColor: const Color(0xFF57624A), // Couleur primaire
+            tooltip: 'Roque',
+            child: const Icon(Icons.king_bed),
+          ),
+        ],
       ),
     );
   }

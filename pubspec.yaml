@@ -39,6 +39,8 @@ dependencies:
   stockfish: ^1.0.0
   get_it: ^7.2.0
   freezed_annotation: ^2.2.0
+  firebase_core: ^2.31.0
+  firebase_database: ^10.5.5
 
 dev_dependencies:
   flutter_test:
