@@ -15,5 +15,4 @@ App Echiquier Connecté est une application Flutter qui vous permet de jouer aux
 
 ## Captures d'écran
 
-Rémi commit
 
