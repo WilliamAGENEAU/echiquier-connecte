@@ -44,6 +44,10 @@ Nous avons aussi nous-même imprimé en 3D les 32 pièces d'échiquiers et insé
 
 ### Code de l'Arduino
 
+Le code qui s'exécute en continu sur la Arduino va initier deux tableaux représentant l'échiquier dans lesquels la valeur 0 correspond à une case avec un pion posé dessus et 1 pour une case vide. Ensuite l'échiquier est scanné en permanence afin de mettre à jour la valeur de chaque case dans le deuxième tableau qui sera ensuite comparé avec le premier qui contient l'étât précédent du tableau afin de déterminer si une pièce a été déplacée.
+
+Si une pièce est déplacée le programme va vérifier si la case passe de prise à libérée ou l'inverse et le message qu'elle envoie sur le port série sera différent en fonction de son état. L'application va ensuite écrire les déplacements de pièces éffectués sur le port série afin qu'ils soient interprétés par une application codée en Python
+
 ### Application Python
 
 ### Application Flutter
