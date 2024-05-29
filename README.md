@@ -1,4 +1,4 @@
-# Echiquier Connecté
+# Échiquier Connecté
 
 L'échiquier connecté a pour but de permettre aux joueurs de suivre en temps réel une partie d'échecs sur une application mobile. 
 
