@@ -15,7 +15,7 @@ class SettingsCubit extends Cubit<SettingsState> {
 
     return SettingsCubit(SettingsState(
       whitePlayer: Player.human(),
-      blackPlayer: Player.human(),
+      blackPlayer: Player.ai(),
       difficulty: 1,
     ));
   }
