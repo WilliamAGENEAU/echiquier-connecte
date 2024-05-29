@@ -4,7 +4,7 @@ L'échiquier connecté a pour but de permettre aux joueurs de suivre en temps r�
 
 ## Description
 
-L'échiquier connecté est un échiquier créé à la main et équipé de capteurs magnétiques permettant de détecter les pièces équipées d'un aimant sur la planche afin de suivre le déplacement des pièces. L'échiquier est aussi connecté à une application mobile Flutter qui suivra le déplacement des pièces en fonction des mouvements des utilisateurs.
+L'échiquier connecté est un échiquier créé à la main et équipé de capteurs magnétiques permettant de détecter les pièces équipées d'un aimant sur la planche afin de suivre le déplacement des pièces. L'échiquier est aussi connecté à une application web React qui suivra le déplacement des pièces en fonction des mouvements des utilisateurs.
 
 ## Fonctionnalités
 
@@ -48,8 +48,6 @@ Nous avons aussi nous-même imprimé en 3D les 32 pièces d'échiquiers et insé
 
 <img width="400" alt="pieces echecs" src="https://github.com/WilliamAGENEAU/echiquier-connecte/assets/94351884/4093dec4-abf2-4385-bba0-ef40c6ab217e"> <img width="400" alt="plan 3D piece echec aimants" src="https://github.com/WilliamAGENEAU/echiquier-connecte/assets/94351884/7778dbd7-ebf9-4906-81b1-4b1d88523333">
 
-
-
 ### Code de l'Arduino
 
 Le code qui s'exécute en continu sur la Arduino va initier deux tableaux représentant l'échiquier dans lesquels la valeur 0 correspond à une case avec un pion posé dessus et 1 pour une case vide. Ensuite l'échiquier est scanné en permanence afin de mettre à jour la valeur de chaque case dans le deuxième tableau qui sera ensuite comparé avec le premier qui contient l'étât précédent du tableau afin de déterminer si une pièce a été déplacée.
@@ -58,7 +56,7 @@ Si une pièce est déplacée le programme va vérifier si la case passe de prise
 
 ### Application Python
 
-### Application Flutter
+### Application React
 
 
 
