@@ -38,9 +38,17 @@ x1 Rouleau d'adhésif blanc pour les contours de l'échiquier
 
 Pour créer l'échiquier nous avons tout d'abord découper la planche de bois aux bonnes dimensions et ensuite peint l'échiquier avec les bombes de peinture pour les différentes cases.
 
+<img width="400" alt="echiquier" src="https://github.com/WilliamAGENEAU/echiquier-connecte/assets/94351884/f9ce23a7-9797-47ce-9fab-5bbee6f7988d">
+
 Nous avons ensuite collé les capteurs magnétiques de l'autre côté de l'échiquier avec de la colle chaude et relié tout ces capteurs à l'aide des cables et des Wagos pour centraliser les cables concernant l'alimentation. Les cables de données des capteurs sont eux directement liés aux 64 PIN de la carte Arduino qui est elle même reliée à un ordinateur qui va lui servir d'alimentation.
 
+<img width="400" alt="cablage" src="https://github.com/WilliamAGENEAU/echiquier-connecte/assets/94351884/71d319ff-f554-4153-91bf-62d81217efe0">
+
 Nous avons aussi nous-même imprimé en 3D les 32 pièces d'échiquiers et inséré les aimants dans les pièces. Pour finir nous avons collés différents autocollants afin d'habiller les contours de l'échiquier et des points de couleur pour mettreen évidence la zone ou est situé le capteur sous chaque case.
+
+<img width="400" alt="pieces echecs" src="https://github.com/WilliamAGENEAU/echiquier-connecte/assets/94351884/4093dec4-abf2-4385-bba0-ef40c6ab217e"> <img width="400" alt="plan 3D piece echec aimants" src="https://github.com/WilliamAGENEAU/echiquier-connecte/assets/94351884/7778dbd7-ebf9-4906-81b1-4b1d88523333">
+
+
 
 ### Code de l'Arduino
 
