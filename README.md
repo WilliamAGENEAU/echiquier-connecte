@@ -66,5 +66,22 @@ Les données seront ensuite envoyée dans une collection games représentant une
 
 ### Application React
 
+L'application web focntionne sous react et JavaScript. Les librairies Chess.js et react-chessboard.js sont utilisées pour gérer la logique du jeu d'échecs.
+
+La librairie firebase est utilisée pour récupérer les données de jeu stockées dans la base de données qui ont été récupérées sur la Arduino et envoyées depuis l'application Pyhton.
+
+Différents états de React sont utilisés : 
+
+game : État pour stocker l'instance du jeu d'échecs (Chess).
+
+boardSize : État pour la taille de l'échiquier, avec une taille par défaut de 400 pixels.
+
+useEffect : Configure une souscription à Firestore pour suivre les mises à jour en temps réel du document games/game1. Les mouvements sont appliqués à une nouvelle instance de Chess et l'état du jeu est mis à jour en conséquence.
+
+La gestion des mouvements est-elle gérée par la fonction OnDrop.
+
+Et le rendu du Composant est géré dans le fichier App.js dans la partie codée en HTML.
+
+L'aaplication Web grâce à toutes ses diiférentes fcntionnalités permet donc de suivre en temps réel les coups joués dans la partie en récupérant leurs informations grâce à la base de données Firebase qui stocke les informations envoyées depuis l'application Python.
 
 
