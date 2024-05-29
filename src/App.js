@@ -65,6 +65,9 @@ function App() {
           onChange={(e) => setBoardSize(e.target.value)}
         />
       </div>
+        <div>      
+        <button className="reset-button" onClick={resetGame}>Reset</button>
+      </div>
     </div>
   );
 }

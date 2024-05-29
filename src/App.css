@@ -67,3 +67,17 @@ label {
   margin-right: 10px;
   color: #282c34;
 }
+.reset-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.reset-button:hover {
+  background-color: #c0392b;
+}
