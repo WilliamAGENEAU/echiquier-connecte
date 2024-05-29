@@ -56,6 +56,14 @@ Si une pièce est déplacée le programme va vérifier si la case passe de prise
 
 ### Application Python
 
+L'application python fonnctionne grâce aux librairies serial et firebase_admin. La première va servir à faire fonctionner la première partie de l'application qui va consister en une boucle infinie qui va continuellement lire les données envoyées par l'arduino sur le port série. Cette partie va différencier les deux types de messages (Pion soulevé et pion posé) et lorsqu'un message de chaque type aura été relevé les données représentant le coup seront envoyées.
+
+Ces données seront d'abord converties afin de correspondre au format souhaité par la WebApp. 
+
+Pour envoyer les données la deuxième librairie va être utilisée, elle nous permet de créer un lien avec Firebase( un outil de gestion de base de données gratuit créé par Google que nous utilisons pour faire le lien entre l'application Pyhton et la WebApp). Pour envoyer ces donnéesil faut d'abord lui donner les credentials liés à notre base de données et instancier une session.
+
+Les données seront ensuite envoyée dans une collection games représentant une partie et chaque est composé de 4 données (XDépart, YDépart, XArrivée et Yarrivée) qui sont stockés dans une collection moves comprise dans la collection games. 
+
 ### Application React
 
 
