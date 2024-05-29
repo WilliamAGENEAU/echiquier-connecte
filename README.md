@@ -49,7 +49,7 @@ Le code qui s'exécute en continu sur la Arduino va initier deux tableaux repré
 Si une pièce est déplacée le programme va vérifier si la case passe de prise à libérée ou l'inverse et le message qu'elle envoie sur le port série sera différent en fonction de son état. L'application va ensuite écrire les déplacements de pièces éffectués sur le port série afin qu'ils soient interprétés par une application codée en Python
 
 ### Application Python
-
+TEST 
 ### Application Flutter
 
 
