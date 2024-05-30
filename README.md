@@ -82,6 +82,6 @@ La gestion des mouvements est-elle gérée par la fonction OnDrop.
 
 Et le rendu du Composant est géré dans le fichier App.js dans la partie codée en HTML.
 
-L'aaplication Web grâce à toutes ses diiférentes fcntionnalités permet donc de suivre en temps réel les coups joués dans la partie en récupérant leurs informations grâce à la base de données Firebase qui stocke les informations envoyées depuis l'application Python.
+L'application Web grâce à toutes ses différentes fonctionnalités permet donc de suivre en temps réel les coups joués dans la partie en récupérant leurs informations grâce à la base de données Firebase qui stocke les informations envoyées depuis l'application Python.
 
 
